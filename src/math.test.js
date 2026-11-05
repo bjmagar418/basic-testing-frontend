@@ -36,3 +36,19 @@ test("should yield 0 if an empty array is provided",() => {
     );
     expect(result).toBe(expectedResult);
 });
+
+test('should yield 0 if an empty array is provided',()=>{
+       
+    const numbers =[];
+
+    const result = add(numbers);
+
+    expect(result).toBe(0);
+});
+
+test("should throw an error if no values is passes into function",()=> {
+const resultFn = () => {
+        add();
+};
+expect(resultFn).toThrow();
+});
